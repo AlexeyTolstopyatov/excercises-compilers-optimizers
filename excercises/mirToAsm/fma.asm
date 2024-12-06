@@ -26,11 +26,9 @@ int fma (int a, int b, int c) {
 
 ; Полагаю можно сделать так:
 section .text
-    globl fma
-
-fma:
-    imul esi, edx
-    add esi, edi
-    mov eax, esi ; Вернуть значение
-    ret ; Выход из операции.
-
+    global fma
+    fma:
+        imul esi, edx
+        add esi, edi
+        mov eax, esi ; Вернуть значение
+        ret ; Выход из операции.

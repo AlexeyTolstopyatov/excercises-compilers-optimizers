@@ -1,0 +1,5 @@
+bb.0 (%ir-block.3)
+    liveins: $edi, $edx, $esi,
+    $esi = IMUL32rr $esi $edx implict-def dead $eflags
+    $eax = LEA64_32r, $rsi, 1, $rdi, 0, $noreg
+    RET64 $eax
