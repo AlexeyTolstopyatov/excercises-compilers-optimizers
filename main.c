@@ -36,8 +36,13 @@ int possible_sum3(int n) {
     eax -= edx;
     ++eax;
 
-    // пока что так... Теперь сжимаемся.
+    // сжатие...
     long result = (((rdi-1) * (rdi-2) + rdi) - (rdi - 3) / 2) + 1;
 
     return result;
+}
+
+// Перевести из IR в C/++
+int mfma (int a, int b, int c) {
+    return a + b * c;
 }
